@@ -101,3 +101,4 @@ double n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(n % 10);
 */
 
+//%2=0 кратное 2
