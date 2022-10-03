@@ -12,6 +12,7 @@ Console.Write("Привет, ");
 Console.WriteLine(username);
 
 
+
 //Сложение и деление случайных чисел
 
 
