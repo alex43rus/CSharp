@@ -16,7 +16,7 @@ if (x2 == x1 * x1)
 else
     Console.WriteLine("Второе число не является квадратом первого");
 */
-
+/*
 Console.Write("Введите номер дня недели: ");
 while (day < 1 || day > 7) {
     Console.Write("Неверно, введите номер дня недели снова: ");
@@ -43,7 +43,7 @@ else if (day == 6)
 
 else if (day == 7) 
     Console.Write("Воскресенье ");
-
+*/
 
 /*
 Console.Write(«Введите число: «);
@@ -71,7 +71,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 
 for (int i = (-1) * n; i <= n; i+=2)
     Console.Write(i + " ");
-
+*/
 
 Console.Write("Введите число: ");
 int n = Convert.ToInt32(Console.ReadLine()); 
@@ -79,6 +79,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 for (int i = (-1) * n; i <= n; i++) // i = i + 1 <=> i++
     Console.Write(i + " ");
 
+/*
 Console.Write("Введите число: ");
 int n = Convert.ToInt32(Console.ReadLine()); 
 int i = (-1) * n;
