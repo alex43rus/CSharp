@@ -1,6 +1,8 @@
 ﻿//Максимум из 9 чисел
 //Функции
 
+
+
 //double f(double x)
 //double result = 
 
