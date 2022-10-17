@@ -12,14 +12,12 @@ int Chetnyi(int[] array)
    int m = 0;
    for (int i = 0; i < array.Length; i++)
    {
-      if (i % 2 == 0)
+      if (i % 2 == 1)
         
         m = m + array[i];
   
    }
-   if (m == 0)
-      
-        Console.Write("В массиве нет четных. ");
+
 
    return m;
 }
@@ -31,4 +29,4 @@ int[] array = new int[n];
 InputArray(array);
 Console.WriteLine($"Начальнаый массив: [{string.Join(", ", array)}]");
 
-Console.Write($"Сумма четных элементов в массиве: {Chetnyi(array)}");
+Console.Write($"Сумма нечетных элементов в массиве: {Chetnyi(array)}");
