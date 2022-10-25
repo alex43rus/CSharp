@@ -33,7 +33,7 @@ void SredneeArifm(int[,] matrix)
             
         }
     summa = Math.Round(summa / (matrix.GetLength(1) - 1), 1);
-    Console.WriteLine($"Среднее арифметическое столбца: {summa} \t");
+    Console.WriteLine($"Среднее арифметическое столбца {j + 1}: {summa} \t");
     }
     
 }
