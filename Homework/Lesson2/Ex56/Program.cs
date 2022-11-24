@@ -26,37 +26,29 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-// int SumRow(int[] matrix)
-// {
-//     int sum = 0;
-//     for (int i = 0; i < matrix.Length; i++)
-//         for (int j = 0; j < matrix.Length; j++)
-//         {
-//             sum = sum + matrix[j];
-//         }
-// Console.WriteLine(sum);
-// return sum;
-// }
-
 void CompareRow(int[,] matrix)
 {
-    int summa = 0;
+    int[] SumRow = new int[matrix.GetLength(0)];
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        summa = 0;
-        for (int j = 0; j < matrix.GetLength(1); j++)
+       for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            summa = summa + matrix[i, j];
-            int min = summa;
+            SumRow[i] += matrix[i, j];
         }
-    Console.WriteLine($"Сумма элементов строки {j + 1}: {summa} \t");
-    int min = summa;
     }
-Console.Write($"Минимальное значение суммы элементов строки: {min} ");
+    int min = SumRow[0];
+    int NumberRow = 0;
+    for (int i = 0; i < SumRow.Length; i++)
+    {
+        if (SumRow[i] < min)
+            min = SumRow[i];
+            NumberRow = i + 1;
+    }
+Console.Write($"Минимальное значение суммы элементов строки {NumberRow}: {min} ");
 }
 
 Console.Clear();
-Console.Write("Введите кол-во строк и столбцов: ");
+Console.Write("Введите кол-во строк и столбцов через пробел: ");
 string[] num = Console.ReadLine().Split(' ');   // ввод двух чисел в одну строку
 int n = int.Parse(num[0]);
 int m = int.Parse(num[1]);
